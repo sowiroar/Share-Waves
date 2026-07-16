@@ -1,0 +1,4 @@
+.jupyter*
+*workspace
+*.dta
+*.zip
