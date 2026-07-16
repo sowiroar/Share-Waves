@@ -1,2 +1,4 @@
 .jupyter*
 *workspace
+*.pdf
+*.md

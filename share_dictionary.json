@@ -1,0 +1,70 @@
+{
+  "dataset_name": "SHARE_BAGs_Variables",
+  "modules": [
+    {
+      "module_name": "ph",
+      "description": "Physical Health",
+      "variables": [
+        {"name": "ph006d1", "description": "Heart attack (1 = Yes, 0 = No)"},
+        {"name": "ph006d2", "description": "Hypertension (1 = Yes, 0 = No)"},
+        {"name": "ph006d5", "description": "Diabetes (1 = Yes, 0 = No)"},
+        {"name": "ph042_", "description": "Self-reported hearing problems"},
+        {"name": "ph048_", "description": "Self-reported distance vision problems"},
+        {"name": "ph049_", "description": "Self-reported near vision problems"}
+      ]
+    },
+    {
+      "module_name": "br",
+      "description": "Behavioral Risks",
+      "variables": [
+        {"name": "br001_", "description": "Current or past smoking habit"},
+        {"name": "br010_", "description": "Alcohol consumption frequency (1 = Daily, 7 = Never in the last 3 months)"},
+        {"name": "br015_", "description": "Frequency of vigorous physical activity (ordinal scale)"},
+        {"name": "br016_", "description": "Frequency of moderate physical activity (ordinal scale)"}
+      ]
+    },
+    {
+      "module_name": "mh",
+      "description": "Mental Health",
+      "variables": [
+        {"name": "mh002_", "description": "Sleep problems / insomnia"},
+        {"name": "mh003_", "description": "Use of sleep medication"},
+        {"name": "eurod", "description": "EURO-D scale for depression (0 to 12)"}
+      ]
+    },
+    {
+      "module_name": "cf",
+      "description": "Cognitive Functions",
+      "variables": [
+        {"name": "cf001_", "description": "Spatial/temporal orientation"},
+        {"name": "cf008tot", "description": "Immediate memory (words recalled from list)"},
+        {"name": "cf016_", "description": "Verbal fluency (number of animals named in 1 minute)"},
+        {"name": "cf018_", "description": "Delayed memory (words recalled after delay)"}
+      ]
+    },
+    {
+      "module_name": "gv_health",
+      "description": "Generated Health Variables",
+      "variables": [
+        {"name": "bmi", "description": "Body Mass Index (BMI)"},
+        {"name": "casp", "description": "CASP index for quality of life and well-being (12 to 48)"},
+        {"name": "sphus", "description": "Self-perceived overall health (1 = Excellent, 5 = Poor)"},
+        {"name": "adl", "description": "Activities of Daily Living (0 to 6 limitations)"},
+        {"name": "iadl", "description": "Instrumental Activities of Daily Living (limitations)"},
+        {"name": "mobility", "description": "Mobility limitations (0 to 10 scale)"},
+        {"name": "chronic", "description": "Total number of diagnosed chronic diseases"}
+      ]
+    },
+    {
+      "module_name": "sociodemographics",
+      "description": "Sociodemographic Variables",
+      "variables": [
+        {"name": "isced1997_r", "description": "Educational level under ISCED 1997 classification"},
+        {"name": "isced2011_r", "description": "Educational level under ISCED 2011 classification"},
+        {"name": "age_int", "description": "Age of the respondent (years)"},
+        {"name": "gender", "description": "Sex or gender of the respondent (1 = Male, 2 = Female)"}
+      ]
+    }
+  ],
+  "notes": "Null values, not applicable, or missing responses (originally negative codes in SHARE such as -1, -2, -99) have been filtered to null values (NaN) for correct statistical analysis."
+}
